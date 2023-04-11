@@ -2,7 +2,7 @@
 def print_a_lot():
     # also for things to be INSIDE the function they need to have the same indentation, in this case 4 spaces (just pressing the tab button will do) 
     print("FIRST LINE")
-    # if we put an 'f' in front of the string we can also print values an variables buy putting them in brackets, for example we print the value 0 here 
+    # if we put an 'f' in front of the string we can also print values an variables by putting them in brackets, for example we print the value 0 here 
     print(f"Printing {0}")
     # Let's print now a variable to make it mor interesting
     hard_calculation = 765 * 453
