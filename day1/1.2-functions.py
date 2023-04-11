@@ -24,11 +24,15 @@ def add_and_print(a, b):
     # as long as the 2 values are numbers, they can be added, you can perform many operation just with variables, we will use '+' to add 2 variables and store it into a new one called sum
     sum = a + b
     # And let's print the sum
-    print(sum)
+    print(f"Adding parameter '{a}' to parameter '{b}': {sum}")
 
-# And now let's call this function again from outside
+# And now let's call this function again from outside, and add two arguments, in this case 4 and 10 that will be the values of the parameters on the function (they are called arguments when you call the function and parameters on the function)
 add_and_print(4, 10)
 # and we can reuse it with different numbers
 add_and_print(42, 54)
+# we can also send variables to functions
+c = 32
+d = 45
+add_and_print(c, d)
 # we could technically send different things but it would have unexpected behaviors, for example lets try adding two strings
 add_and_print("Hello", "World")
