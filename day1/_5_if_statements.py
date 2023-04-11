@@ -27,6 +27,8 @@ def guess_the_number():
     if guessed_number == 420:
         # Let's just print CORRECT if the user guessed the number
         print("CORRECT")
+        # And lets just return a boolean with the value of true so we can us it as a condition and skip future calls of it
+        return True # Just in case it isn't clear, when you call return in a function it also stops executing all the rest of the code in the function, is really good to skip code that you dont need if a condition is met
     # now we can use the elif keyword to ask another thing, the flow goes like this, if the first if condition triggers, the rest of the elif statements wont be executed, but if the condition isn't met it will ask the next elif if the condition is met and so on (you can have infinite elif's). Here the condition is if guessed_number is greater than 420 this condition will be met, we use the '>' operator for greater than.
     elif guessed_number > 420:
         # if this is met lets give the user a hint that the correct number should be lower
@@ -35,12 +37,16 @@ def guess_the_number():
     else:
         # one last hint
         print("Guess higher")
+    # Let's return false if a the correct condition isn't met, this will be the last part of the code to execute as is not inside an if. elif or else, so this will always execute if the code didn't return earlier
+    return False
     
-print("\guess_the_number calls:")
+print("\nguess_the_number calls:")
 # Let's give the user 3 tries to guess
-guess_the_number()
-guess_the_number()
-guess_the_number()
+# We will use the not keyword in front of the condition to negate the condition, this will ask "if the condition isn't met, the enter" and then we call a function that return true or false, in this case we will enter the if, if the function returns false, or skip it otherwise, this will not bother hte user asking again if he guesses correctly
+if not guess_the_number(): 
+    # Same as above, but we are nesting an if inside an if, we will only enter this if, if the user guesses wrong 2 times
+    if not guess_the_number(): 
+        guess_the_number() # here we give the user one last try.
 
 # Exercise 1.3: code a function named is_even that has one int parameter, and use the % operator to return a boolean (true if even, false if odd).
 
