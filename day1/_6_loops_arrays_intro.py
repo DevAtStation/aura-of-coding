@@ -118,7 +118,7 @@ def skip_only_cringe():
 
 #skip_only_cringe()
 
-# last 'for' example (for now)
+# another 'for' example
 def skip_only_cringe2():
     # next few lines are the same
     words = ["based", "cringe", "chad", "red-pill"]
@@ -132,6 +132,19 @@ def skip_only_cringe2():
 # never forgetti
 # skip_only_cringe2()
 
+# last 'for' example (for now)
+def stop_on_cringe():
+    words = ["based", "chad", "cringe", "red-pill"]
+    for word in words:
+        if word == "cringe":
+            # in this case we want to stop the loop when we see "cringe", so we use the 'break' keyword for that, this word will make the code stop and skip all next loops, everything about the loops ends with this 'break' word, also works with 'while' loops
+            break 
+        print(f"The current none cringe word is {word}")
+    print("this line is outside the loop, the loop finished")
+
+# seriously you need to call things
+stop_on_cringe()
+
 # # now for the next demonstration let's try integrating the while loop into the game we made earlier... but since we don't want to copy the code over lets use the 'from' and 'import' keywords, with them we can use functions from other files by writing the name of the file and then the name of the function we want to import.
 # from _5_if_statements import guess_the_number
 
@@ -143,10 +156,18 @@ def skip_only_cringe2():
 # # Ok, this will be our function
 # def while_integration():
 #     # Since we made it so guess_the_number returns a boolean (true or false), we can use that boolean as a condition and in this case the code would translate to "while the return value of guess_the_number is false (we do this with the 'not'), execute the following code"
-#     while not guess_the_number():
+#     while not guess_the_number(420):
 #         # here we just use the 'pass' keyword to nothing and loop again, pass just is a line that does nothing, can be used as a placeholder, but here, the code blocks inside the while require at least to put 1 line of code and we dont really want to print anything here as all the printing is done on the function side.
 #         pass
 
 # # We call this one now
-# # while_integration()
+# while_integration()
+
+# # Last variation of this example
+# def while_integration2():
+#     while True:
+#         if guess_the_number(420):
+#             break
+
+# while_integration2()
 
