@@ -9,8 +9,8 @@ title = "Coding Aura"
 # now title will store "Coding Aura" and the previous value is lost to the void
 # we can also assign variables to other variables
 newTitle = title
-title = "Aura of Coding"
 # now before changing the value of title, we store it in another variable, so we don't lose the value later if we need it 
+title = "Aura of Coding"
 
 # 'print()' print is a python function that will print into the terminal whatever is inside the (), it could be any value, like a number, a string or even what's inside variables (think of the terminal as a linux terminal that you see in hacker shows)
 # Let's try printing our previous variables one after the other and a simple string
@@ -18,4 +18,4 @@ print("Hello Aura")
 print(title)
 print(newTitle)
 
-# Now lets try running this by typing "python .\day1\1.1-intro.py" on the terminal and hitting enter, also F5 on visual studio code runs the current python file
+# Now lets try running this by typing "python .\day1\_1_intro.py" on the terminal and hitting enter, also F5 on visual studio code runs the current python file

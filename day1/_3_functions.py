@@ -1,6 +1,6 @@
 # functions are a way to reuse code, lets say you want to run something that prints a bunch of things multiple tines, you can define a function by using the 'def' keyword, followed by a name and a list of parameters, in this case we wont need parameters so we simply follow it by an empty group of parenthesis and a colon '():'
 def print_a_lot():
-    # also for things to be INSIDE the function they need to have the same indentation, in this case 4 spaces (just pressing the tab button will do) 
+    # also for things to be INSIDE the function they need to have the same indentation, in this case 4 spaces (just pressing the tab button will do). Each level of indentation means that indented code is inside the less indented code, in most languages instead of indentation they use brackets to separate these code blocks and code blocks have they own rules too,  but for now lets just continue.
     print("FIRST LINE")
     # if we put an 'f' in front of the string we can also print values an variables by putting them in brackets, for example we print the value 0 here 
     print(f"Printing {0}")
