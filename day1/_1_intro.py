@@ -2,7 +2,7 @@
 
 # '#' symbol is used to comment code like this part, this line of code will get ignored by python
 
-# 'variables' a variable is a named piece of memory that stores data, for instance on the next line I will store an string (sequence of characters) into a variable, we do this by using the '=' operator, like 'variable = data'
+# 'variables' a variable is a named piece of memory that stores data, for instance on the next line I will store an string (sequence of characters) into a variable, we do this by using the '=' operator, like 'variable = data', '=' operator is only used to assign a value on the right side to a variable on the left side, never the other way around ("data" = variable wont work)
 title = "Aura of Coding"
 # we can change variables to store different data
 title = "Coding Aura"

@@ -19,7 +19,7 @@ def multiply_if_below_ten(x):
 
 # we can also use booleans as conditions, after all the 'if' only wants to know if something is true or false, band booleans store... true or false, they are like a perfect fit 
 def is_number_less_than_six(number):
-    # instead of assigning true or false to the boolean we can just assign the condition itself, in this case "is number less than 6" if the condition is true the boolean will be true, and false of not.
+    # As we saw before on '_2_operators_types.py' instead of assigning true or false to the boolean we can just assign the condition itself, in this case "is number less than 6" if the condition is true the boolean will be true, and false of not.
     condition = number < 6
     #if true wi go inside and print
     if condition:
