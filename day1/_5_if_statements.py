@@ -28,9 +28,6 @@ def is_number_less_than_six(number):
         return True
     # lets print the condition in the false state now just see what happens
     print(f"The condition was {condition}")
-    # another cool thing about booleans, is that you cna operate in weird ways, here we can use the 'not' keyword to negate the value of a boolean, in other words, if the boolean is true it will convert it to false and if false convert it to true.
-    condition = not condition
-    print(f"The condition now is {condition}")
     # let's return false now after al the answer to the original question was false
     return False
 
