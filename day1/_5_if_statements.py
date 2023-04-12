@@ -17,6 +17,30 @@ def multiply_if_below_ten(x):
 # print(multiply_if_below_ten(15))
 # print(multiply_if_below_ten(-5))
 
+# we can also use booleans as conditions, after all the 'if' only wants to know if something is true or false, band booleans store... true or false, they are like a perfect fit 
+def is_number_less_than_six(number):
+    # instead of assigning true or false to the boolean we can just assign the condition itself, in this case "is number less than 6" if the condition is true the boolean will be true, and false of not.
+    condition = number < 6
+    #if true wi go inside and print
+    if condition:
+        print(f"The condition was {condition}")
+        # and here we can return and skip the rest of the code in the function if we want, we dont have much to do after this so lets return, we can return true as the caller of the functions may need the result of the question "is number less than 6"
+        return True
+    # lets print the condition in the false state now just see what happens
+    print(f"The condition was {condition}")
+    # another cool thing about booleans, is that you cna operate in weird ways, here we can use the 'not' keyword to negate the value of a boolean, in other words, if the boolean is true it will convert it to false and if false convert it to true.
+    condition = not condition
+    print(f"The condition now is {condition}")
+    # let's return false now after al the answer to the original question was false
+    return False
+
+
+# print("\is_number_less_than_six calls:")
+# is_number_less_than_six(2)
+# is_number_less_than_six(6)
+
+# as a side note, there are other operators that are similar to '<' (lesser than) and '>'(greater than), like '<=' (lesser or equal than) and '>=' (greater or equal than), for example "6 > 6" as an statement is false, but "6 >= 6" would be true
+
 # Let's try using ifs to get different values from a function depending on the input, we will use if, elif and else for this and a few new operators
 def guess_the_number(number):
     # here we use the input function (another python function like print) to get a number typed by the user when we call this function, this will be defined on runtime so is always the same as in other examples.
