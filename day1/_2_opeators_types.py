@@ -23,3 +23,8 @@ bool_value = not bool_value
 print(bool_value)
 # moar cool things with booleans, you cna just assign statements to booleans and the boolean will be true if the statement, is true and false otherwise, is like asking a question and assigning the resulting "yes or no" to the variable, lets try an example
 bool_value = 3 == 3 # here we are using the '==' (double equal) operator to ask if "is 3 equal to 3?", if true the true value will go into the variable, if not it will assign the false value to the variable. We can't use the '=' to ask if something is equal to another thing as the '=' operator is only used to assign a value on the right side to a variable on the left
+print(bool_value)
+
+# let's try the same again but asking something with a false outcome like "is 4 equal to 3?"
+bool_value = 4 == 3
+print(bool_value)
