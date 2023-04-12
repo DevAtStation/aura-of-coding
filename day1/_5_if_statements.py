@@ -1,9 +1,9 @@
 # if statements are used to control the flow of the code, to be a programmer you dont need only to know logic, you need to bend logic to your will, and the 'if' keyword will help you with that
 # lets make an easy example, the 'if' keyword is used like this, "if 'condition':" and if the condition is met, then whats inside the if is executed. For instance let's use the 'less than' operator '<' to ask if a number is less than another:
-if 1 < 3:
-    print("1 is les than 3... no shit")
-if 5 < 3:
-    print("this will NEVER EVER execute")
+# if 1 < 3:
+#     print("1 is les than 3... no shit")
+# if 5 < 3:
+#     print("this will NEVER EVER execute")
 
 # Now lets use ifs in a function and see how flexible it is, lets make a function that if the number is less than 10 it gets multiplied by 10 and if not it just returns the same number
 def multiply_if_below_ten(x):
@@ -12,10 +12,10 @@ def multiply_if_below_ten(x):
     return x
 
 # Lets organize the code output a bit more, by adding a '\n' at the start of the print to print an empty line and then lets add some sort of title to separate it from the last part of the code.
-print("\nmultiply_if_below_ten calls:")
-print(multiply_if_below_ten(5))
-print(multiply_if_below_ten(15))
-print(multiply_if_below_ten(-5))
+# print("\nmultiply_if_below_ten calls:")
+# print(multiply_if_below_ten(5))
+# print(multiply_if_below_ten(15))
+# print(multiply_if_below_ten(-5))
 
 # Let's try using ifs to get different values from a function depending on the input, we will use if, elif and else for this and a few new operators
 def guess_the_number():
@@ -40,13 +40,13 @@ def guess_the_number():
     # Let's return false if a the correct condition isn't met, this will be the last part of the code to execute as is not inside an if. elif or else, so this will always execute if the code didn't return earlier
     return False
     
-print("\nguess_the_number calls:")
+# print("\nguess_the_number calls:")
 # Let's give the user 3 tries to guess
 # We will use the not keyword in front of the condition to negate the condition, this will ask "if the condition isn't met, the enter" and then we call a function that return true or false, in this case we will enter the if, if the function returns false, or skip it otherwise, this will not bother hte user asking again if he guesses correctly
-if not guess_the_number(): 
-    # Same as above, but we are nesting an if inside an if, we will only enter this if, if the user guesses wrong 2 times
-    if not guess_the_number(): 
-        guess_the_number() # here we give the user one last try.
+# if not guess_the_number(): 
+#     # Same as above, but we are nesting an if inside an if, we will only enter this if, if the user guesses wrong 2 times
+#     if not guess_the_number(): 
+#         guess_the_number() # here we give the user one last try.
 
 # Exercise 1.3: code a function named is_even that has one int parameter, and use the % operator to return a boolean (true if even, false if odd).
 
