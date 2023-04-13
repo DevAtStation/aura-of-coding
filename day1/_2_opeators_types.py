@@ -11,6 +11,10 @@ print(z)
 z = x % 7 # this will take the 12 inside x and divide it by 7 and instead of giving you the result of the division (1.715~) it will give you the remainder (5) and store it in z
 print(z)
 
+firstname = "Jubs"
+lastname = 1
+fullname = firstname + " " + str(lastname)
+print(fullname)
 # Now lets talk a bit about variable types, we already saw ints (whole numbers) and strings (words, chain of characters or letters), we can see if we pay attention to the print on the division result print, that there is a 6.0 instead of just 6, this is because when you make divisions python assumes you are using floats (floating point numbers, or another way to say numbers with decimals), after all it's safe to assume that most divisions will have decimals as a result.
 # so we now know ints, strings and floats but one of the most important ones is booleans (true or false values), lets print an example
 bool_value = True
@@ -19,6 +23,9 @@ bool_value = False
 print(bool_value)
 # these are simple on/off values that that require little memory and are really useful to store result from conditions and work pretty well with the 'if' statements that we will learn later
 # another cool thing about booleans, is that you cna operate in weird ways, here we can use the 'not' keyword to negate the value of a boolean, in other words, if the boolean is true it will convert it to false and if false convert it to true.
+# bool_value = False
+# not negates values
+# not bool_value = True
 bool_value = not bool_value
 print(bool_value)
 # moar cool things with booleans, you cna just assign statements to booleans and the boolean will be true if the statement, is true and false otherwise, is like asking a question and assigning the resulting "yes or no" to the variable, lets try an example

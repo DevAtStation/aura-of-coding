@@ -8,7 +8,7 @@
 # Now lets use ifs in a function and see how flexible it is, lets make a function that if the number is less than 10 it gets multiplied by 10 and if not it just returns the same number
 def multiply_if_below_ten(x):
     if x < 10:
-        x  = x * 10
+        x = x * 10
     return x
 
 # Lets organize the code output a bit more, by adding a '\n' at the start of the print to print an empty line and then lets add some sort of title to separate it from the last part of the code.
@@ -16,6 +16,7 @@ def multiply_if_below_ten(x):
 # print(multiply_if_below_ten(5))
 # print(multiply_if_below_ten(15))
 # print(multiply_if_below_ten(-5))
+# print(multiply_if_below_ten(10))
 
 # we can also use booleans as conditions, after all the 'if' only wants to know if something is true or false, band booleans store... true or false, they are like a perfect fit 
 def is_number_less_than_six(number):
@@ -59,17 +60,27 @@ def guess_the_number(number):
         # one last hint
         print("Guess higher")
     # Let's return false if a the correct condition isn't met, this will be the last part of the code to execute as is not inside an if. elif or else, so this will always execute if the code didn't return earlier
+
+    # if condition == True:
+    #     do something
+    # elif other condition == True:
+    #     do this particular thing
+    # elif other condition == True:
+    #     do this particular thing
+    # else:
+    #     do another thing
+
     return False
     
-# print("\nguess_the_number calls:")
-# # Now let's give the user 3 tries to guess
-# # we first define the number we want to guess so we don't repeat it later, repeating same numbers instead of assigning them to a variable an using the variable is general bad, since if you want to change the number you need to change it in all the places it is used, we call this numbers "magic numbers" and we call the act of putting numbers instead of reusing variables "hardcoding"
-# number_to_guess = 420
-# # We will use the 'not' keyword in front of the condition to negate the condition, this will ask "if the condition isn't met, the enter" and then we call a function that return true or false, in this case we will enter the if, if the function returns false, or skip it otherwise, this will not bother hte user asking again if he guesses correctly
-# if not guess_the_number(number_to_guess): 
-#     # Same as above, but we are nesting an if inside an if, we will only enter this if, if the user guesses wrong 2 times
-#     if not guess_the_number(number_to_guess): 
-#         guess_the_number(number_to_guess) # here we give the user one last try.
+print("\nguess_the_number calls:")
+# Now let's give the user 3 tries to guess
+# we first define the number we want to guess so we don't repeat it later, repeating same numbers instead of assigning them to a variable an using the variable is general bad, since if you want to change the number you need to change it in all the places it is used, we call this numbers "magic numbers" and we call the act of putting numbers instead of reusing variables "hardcoding"
+number_to_guess = 420
+# We will use the 'not' keyword in front of the condition to negate the condition, this will ask "if the condition isn't met, the enter" and then we call a function that return true or false, in this case we will enter the if, if the function returns false, or skip it otherwise, this will not bother hte user asking again if he guesses correctly
+if not guess_the_number(number_to_guess):
+    # Same as above, but we are nesting an if inside an if, we will only enter this if, if the user guesses wrong 2 times
+    if not guess_the_number(number_to_guess): 
+        guess_the_number(number_to_guess) # here we give the user one last try.
 
 # Exercise 1.3: code a function named is_even that has one int parameter, and use the % operator to return a boolean (true if even, false if odd).
 
