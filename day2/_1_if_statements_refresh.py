@@ -56,16 +56,3 @@ if_complex(False, True, False)
 # if pretty face and personality:    
 #   ultra_bang()
 # written on 14-04-2023 - Viktor J.J. Step, The mystery bang, Co-author J.U. Buli
-        
-def guess_the_number(number):
-    guessed_number = input("Guess a number: ")
-    guessed_number = int(guessed_number)
-    if guessed_number == number:
-        print("CORRECT")
-        return True 
-    elif guessed_number > number:
-        print("Guess lower")
-    else:
-        print("Guess higher")
-
-    return False

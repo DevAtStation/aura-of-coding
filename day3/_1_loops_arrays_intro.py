@@ -146,12 +146,12 @@ def stop_on_cringe():
 stop_on_cringe()
 
 # # now for the next demonstration let's try integrating the while loop into the game we made earlier... but since we don't want to copy the code over lets use the 'from' and 'import' keywords, with them we can use functions from other files by writing the name of the file and then the name of the function we want to import.
-# from _5_if_statements import guess_the_number
+# from utils import guess_the_number
 
 # # We can also import ALL functions of a file the following way
-# #import _5_if_statements
+# #import utils
 # # but if we do it this way we need to write the filename before using the function, like this:
-# #_5_if_statements.guess_the_number()
+# #utils.guess_the_number()
 
 # # Ok, this will be our function
 # def while_integration():
