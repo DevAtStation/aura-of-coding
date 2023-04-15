@@ -29,8 +29,10 @@ def if_complex(condition1, condition2, condition3):
     if condition1 and (condition2 or condition3):
         print("The first condition was true and at least one of the others were true")
     else:
-        print("The first condition was false or at least one of the others were false")
-    
+        print("The first condition was false or at least one of the others were false") 
+
+
+
 if_refresh(True, True, True)
 if_refresh(False, True, False)
 if_refresh(False, False, True)
@@ -46,6 +48,14 @@ if_complex(False, True, True)
 if_complex(True, False, True)
 if_complex(False, True, False)
 
+# if pretty face or personality:    
+#   bang()
+# else
+#   no_bang()
+
+# if pretty face and personality:    
+#   ultra_bang()
+# written on 14-04-2023 - Viktor J.J. Step, The mystery bang, Co-author J.U. Buli
         
 def guess_the_number(number):
     guessed_number = input("Guess a number: ")
