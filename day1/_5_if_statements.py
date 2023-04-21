@@ -82,5 +82,3 @@ if not guess_the_number(number_to_guess):
     if not guess_the_number(number_to_guess): 
         guess_the_number(number_to_guess) # here we give the user one last try.
 
-# Exercise 1.3: code a function named is_even that has one int parameter, and use the % operator to return a boolean (true if even, false if odd).
-
