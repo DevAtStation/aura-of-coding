@@ -3,7 +3,7 @@
 # You may think of attributes as the things the object has, and the methods as the things the object can do.
 
 # Let's take a car for example:
-class Car:
+class Car: 
     def __init__(self):
         self.color = ""
         self.year = 0
@@ -19,17 +19,18 @@ class Car:
 # blue_car.year = 2010
 # blue_car.honk()
 
-class Animal:
-    def __init__(self, name, age):
+# Animal class
+class Animal:  # this is the parent class 
+    def __init__(self, name, age): # this is the constructor
         self.name = name
         self.age = age
 
-    def speak(self):
+    def speak(self): # this is a method
         print("Doesn't make any sound")
 
 class Dog(Animal):
     def __init__(self, name, breed, hair_type, age):
-        super().__init__(name, age)
+        super().__init__(name, age) # this will call the constructor from the parent class
         self.breed = breed
         self.hair_type = hair_type
     
@@ -37,31 +38,31 @@ class Dog(Animal):
         print("The dog is running")
 
     def speak(self):
-        print("Woof!")
+        print("Woof!") # this will override the speak method from the parent class
 
     def description(self):
         print(f"{self.name} is a {self.breed} that is {self.age} years old")
 
 class Cat(Animal):
     def __init__(self, name, age):
-        super().__init__(name, age)
+        super().__init__(name, age) # this will call the constructor from the parent class
     
     def speak(self):
-        print("Meow!")
+        print("Meow!") # this will override the speak method from the parent class
 
 class StingRay(Animal):
     def __init__(self, name, age):
         super().__init__(name, age)
 
 def make_animal_speak(animal):
-    animal.speak()
+    animal.speak() # this will call the speak method from the class that the animal is an instance of
 
 big_dog = Dog("Skamp", "Rothweiler", "short", 9)
-make_animal_speak(big_dog)
+make_animal_speak(big_dog) # this will call the speak method from the Dog class
 normal_cat = Cat("Snowball", 5)
-make_animal_speak(normal_cat)
+make_animal_speak(normal_cat) # this will call the speak method from the Cat class
 sting_ray = StingRay("Stingy", 1)
-make_animal_speak(sting_ray)
+make_animal_speak(sting_ray) # this will call the speak method from the Animal class
 
 print("")
 # big_dog.age = 10
