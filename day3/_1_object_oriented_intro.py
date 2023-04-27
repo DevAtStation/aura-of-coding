@@ -1,3 +1,4 @@
+# (DETAILED CLASS AND OBJECT SYNTAX EXPLANATION AT THE END OF THE FILE)
 # Object Oriented Programming Intro:
 # OOP is a way of thinking about programming, based on the concept of "objects", which can contain data, in the form of variables, often known as attributes; and code, in the form of functions, often known as methods.
 # You may think of attributes as the things the object has, and the methods as the things the object can do.
