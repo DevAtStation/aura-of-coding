@@ -1,3 +1,5 @@
+#I am moderfrying the codex
+
 # Exercise 1.1: code a function named say_hello that has one string parameter, the function must print "Hello " and the content of the parameter
 #Please do the exercises 
 
