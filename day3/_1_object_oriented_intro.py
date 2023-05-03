@@ -141,6 +141,10 @@ print(f"The total number alive henchs is {Henchman.active_count}")
 print(f"The total number of killed henchs is {Henchman.dead_henchs}")
 print("")
 
+import json
+test = json.dumps(hench_1.__dict__, indent=4)
+print(test)
+
 
 # class is a blueprint for creating objects, it contains all the methods and attributes of the object, e.g. class Object has the method method() and the attribute attribute
 class Object: 
